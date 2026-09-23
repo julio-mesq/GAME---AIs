@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<base href="./">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Meu GTA</title>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js"}}</script>
+</head>
+<body>
+<canvas id="c"></canvas>
+<div id="hud">
+  <div id="bars"><div class="bar hp"><i id="hp"></i></div><div class="bar st"><i id="st"></i></div><div id="money">$0</div></div>
+  <div id="stars"></div><div id="alvo"></div><div id="info"></div><canvas id="mini" width="160" height="160"></canvas><div id="missao"></div><div id="nt"></div>
+</div>
+<canvas id="mapa" width="700" height="700"></canvas>
+<div id="inv"></div><div id="escolha"></div>
+<div id="menu"><h1>MEU GTA</h1><p>Clique para jogar</p>
+<div id="volbox" onclick="event.stopPropagation()">Volume <input id="vol" type="range" min="0" max="100" value="60"></div>
+<small>WASD mover · Shift correr · C agachar · Espaço pular/freio · F atirar · R recarregar · 1-6 armas<br>E veículo · H buzina · G falar com NPC · V câmera · Tab inventário · M mapa · ESC pausa</small></div>
+<script type="module" src="main.js"></script>
+</body>
+</html>
